@@ -8,6 +8,7 @@ import React from 'react'
 import { cn } from '@/lib/utils'
 import { useScroll } from 'motion/react'
 import DeepEthereumTransparent from "@/assets/brand/deepethereum-transparent.png"
+import Logo from '../logo'
 
 const menuItems = [
     { name: 'Courses', href: '#' },
@@ -40,7 +41,7 @@ export const Header = () => {
                                 href="/"
                                 aria-label="home"
                                 className="flex items-center space-x-2">
-                                <Image src={DeepEthereumTransparent} alt="DeepEthereum" width={170} height={80} priority={true} />
+                                <Logo />
                             </Link>
 
                             <button
@@ -57,7 +58,7 @@ export const Header = () => {
                                         <li key={index}>
                                             <Link
                                                 href={item.href}
-                                                className="text-muted-foreground hover:text-accent-foreground block duration-150">
+                                                className="hover:text-accent-foreground block duration-150">
                                                 <span>{item.name}</span>
                                             </Link>
                                         </li>
@@ -86,7 +87,7 @@ export const Header = () => {
                                     variant="outline"
                                     size="sm">
                                     <Link href="#">
-                                        <span>Login</span>
+                                        <span>Sign In</span>
                                     </Link>
                                 </Button>
                                 <Button
