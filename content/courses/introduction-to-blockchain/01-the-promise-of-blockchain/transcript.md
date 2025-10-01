@@ -1,4 +1,6 @@
-# The Promise of Blockchain
+# The Promise of Blockchain (Transcript)
+
+**Author: Abyan Majid**
 
 Before we dive into what blockchain is and how it works, I want to first to talk about why we even care. What is the promised value of blockchain and why it's such a big deal. To do that, let's take a trip back in time to the music industry.
 
