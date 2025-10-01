@@ -1,19 +1,16 @@
 'use client'
 
 import Link from 'next/link'
-import Image from 'next/image'
 import { Menu, X } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import React from 'react'
 import { cn } from '@/lib/utils'
 import { useScroll } from 'motion/react'
-import DeepEthereumTransparent from "@/assets/brand/deepethereum-transparent.png"
 import Logo from '../logo'
 
 const menuItems = [
-    { name: 'Courses', href: '#' },
-    { name: 'Blog', href: '#' },
-    { name: 'About', href: '#' },
+    { name: 'Courses', href: '/courses' },
+    { name: 'About', href: '/about' },
 ]
 
 export const Header = () => {
@@ -40,7 +37,7 @@ export const Header = () => {
                             <Link
                                 href="/"
                                 aria-label="home"
-                                className="flex items-center space-x-2">
+                                className="flex items-center space-x-2 pb-1">
                                 <Logo />
                             </Link>
 
@@ -58,7 +55,7 @@ export const Header = () => {
                                         <li key={index}>
                                             <Link
                                                 href={item.href}
-                                                className="hover:text-accent-foreground block duration-150">
+                                                className="hover:text-muted-foreground block duration-150">
                                                 <span>{item.name}</span>
                                             </Link>
                                         </li>
